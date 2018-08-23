@@ -2,41 +2,41 @@ var nurseController = require('../controllers/nurseController.js');
 
 module.exports = function(app) {
 
-    app.get('/dashboard', isLoggedIn, nurseController.dashboard);
+    app.get('/', nurseController.dashboard);
 
     // app.post('/dashboard', isLoggedIn, nurseController.schedule);
 
-    app.post('/dashboard', isLoggedIn, badgeIdCheck, nurseController.schedule);
+    app.post('/', nurseController.schedule);
     // app.post('/dashboard/:badgeId', isLoggedIn, nurseController.schedule);
 
     // app.post('/dashbaord', isLoggedIn, nurseController.dashboard);
 
 
 
-    function badgeIdCheck(req, res, next) {
+    // function badgeIdCheck(req, res, next) {
 
-        if (req.body.badgeId === req.user.badgeId) {
-            return next();
-        } else {
-            res.redirect('/signin');
-        }
+    //     if (req.body.badgeId === req.user.badgeId) {
+    //         return next();
+    //     } else {
+    //         res.redirect('/signin');
+    //     }
 
-    }
-
-
+    // }
 
 
-    function isLoggedIn(req, res, next) {
-        if (req.isAuthenticated()) {
-            console.log("is authenticated");
-            return next();
-        } else {
-
-            res.redirect('/signin');
-        }
 
 
-    }
+    // function isLoggedIn(req, res, next) {
+    //     if (req.isAuthenticated()) {
+    //         console.log("is authenticated");
+    //         return next();
+    //     } else {
+
+    //         res.redirect('/signin');
+    //     }
+
+
+    // }
 
 
 

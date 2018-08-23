@@ -2,12 +2,6 @@ var exports = module.exports = {}
 var db = require("../models");
 
 
-exports.make = function(req, res) {
-
-    res.render("signup");
-
-}
-
 
 exports.portal = function(req, res, dbpatients) {
 

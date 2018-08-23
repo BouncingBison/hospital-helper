@@ -1,8 +1,8 @@
-Sequelize.prototype.Validator = Sequelize.Validator = require('validator')
+// Sequelize.prototype.Validator = Sequelize.Validator = require('validator')
 
-this.sequelize.Validator.extend('checkBadgeId', function(val) {
-    return req.body.badgeId === req.body.badgeId
-})
+// this.sequelize.Validator.extend('checkBadgeId', function(val) {
+//     return req.body.badgeId === req.body.badgeId
+// })
 
 
 
