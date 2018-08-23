@@ -17,10 +17,23 @@
   },
   "homepage": "https://github.com/BouncingBison/hospital-helper#readme",
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.3",
-    "mysql": "^2.16.0",
-    "mysql2": "^1.6.1",
-    "sequelize": "^4.38.0"
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.16.0",
+    "cookie-session": "^2.0.0-beta.3",
+    "dotenv": "^4.0.0",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.0",
+    "handlebars": "^4.0.11",
+    "helmet": "^3.12.0",
+    "method-override": "^2.3.10",
+    "moment": "^2.20.1",
+    "morgan": "^1.9.0",
+    "mysql": "^2.15.0",
+    "nodemon": "^1.15.1",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "sequelize": "^3.30.1"
   }
 }
