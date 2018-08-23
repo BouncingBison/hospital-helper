@@ -1,0 +1,26 @@
+{
+  "name": "hospital-helper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BouncingBison/hospital-helper.git"
+  },
+  "author": "michael ross curnes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BouncingBison/hospital-helper/issues"
+  },
+  "homepage": "https://github.com/BouncingBison/hospital-helper#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mysql": "^2.16.0",
+    "mysql2": "^1.6.1",
+    "sequelize": "^4.38.0"
+  }
+}
